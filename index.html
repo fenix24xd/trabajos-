@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>>, initial-scale=1.0">
-    <title>Document</title>
+    <title> formulario de registro </title>
+    <link rel="stylesheert" href="estilos.css">
 </head>
 <body>
-    <h1>
-        hola mundo
-    </h1>
+    <h1>  formulaio de registro </h1>
+     <form action="registro.php" method="post" 
+     class="form-registre"> 
+         <h2 class="form-titulo">crea una cuenta</h2>
+         <div  class="contenedor-inputs">
+             <input type="text" name="nombre" 
+             placeholder="nombre" class="input-48" required>
+             <input type="text" name="apellido" 
+             placeholder="apellido" class="input-48" required>
+             <input type="email" name="correo" 
+             placeholder="correo" class="input-100" required>
+             <input type="text" name="usuario" 
+             placeholder="usuario" class="input-48" required>
+             <input type="password" name="clave" 
+             placeholder="contraseña" class="input-48" required>
+             <input type="text" name="telefono" 
+             placeholder="telefono"  class="input-100" required>
+             <input type="submit" values="registrar" class="btn-enviar">
+             <p class="form__link">¿ya tienes una cuenta ? <a href="#"> ingresa aqui
+             </a> </p>
+         </div>
+     </form>
 </body>
 </html>
